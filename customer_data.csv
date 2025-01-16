@@ -1,0 +1,21 @@
+customer_id,return_likelihood,repeat_purchase,gender,category,season,age,total_spend,frequency,recency (days)
+CUST1000,1,1,M,Clothing,Spring,44,198,5,52
+CUST1001,0,1,M,Appliances,Winter,62,279,4,16
+CUST1002,0,1,F,Toys,Fall,46,66,4,52
+CUST1003,1,0,F,Home Improvement,Summer,60,747,3,-1
+CUST1004,1,1,F,Toys,Summer,25,833,4,63
+CUST1005,1,0,F,Toys,Spring,21,752,4,-1
+CUST1006,1,1,M,Home Improvement,Fall,64,427,2,35
+CUST1007,0,1,M,Grocery,Winter,37,458,2,1
+CUST1008,0,0,F,Grocery,Summer,55,509,3,-1
+CUST1009,0,1,F,Appliances,Fall,59,310,5,21
+CUST1010,1,1,M,Books,Winter,25,823,4,14
+CUST1011,1,0,F,Appliances,Winter,55,366,2,-1
+CUST1012,1,1,M,Sports,Fall,57,744,3,32
+CUST1013,1,0,F,Furniture,Fall,34,721,1,-1
+CUST1014,1,1,M,Clothing,Summer,20,951,3,26
+CUST1015,1,0,M,Electronics,Winter,61,288,1,-1
+CUST1016,0,0,F,Electronics,Winter,43,844,2,-1
+CUST1017,0,1,M,Sports,Winter,23,627,5,13
+CUST1018,0,0,M,Clothing,Fall,62,722,4,-1
+CUST1019,0,0,F,Sports,Winter,64,468,1,-1

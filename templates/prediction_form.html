@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Prediction App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        h1 {
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            color: #555;
+        }
+        input {
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 0.7rem;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Customer Prediction App</h1>
+        <form method="POST">
+            <label for="gender">Gender:</label>
+            <input type="text" id="gender" name="gender">
+            
+            <label for="category">Category:</label>
+            <input type="text" id="category" name="category">
+            
+            <label for="season">Season:</label>
+            <input type="text" id="season" name="season">
+            
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age">
+            
+            <label for="total_spend">Total Spend:</label>
+            <input type="number" id="total_spend" name="total_spend">
+            
+            <label for="frequency">Frequency:</label>
+            <input type="number" id="frequency" name="frequency">
+            
+            <label for="recency">Recency (days):</label>
+            <input type="number" id="recency" name="recency (days)">
+            
+            <input type="submit" value="Predict">
+        </form>
+        {% if prediction %}
+        <h2>Prediction Results:</h2>
+        <p>Return Likelihood: {{ prediction.return_likelihood }}</p>
+        <p>Repeat Purchase Likelihood: {{ prediction.repeat_purchase_likelihood }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
